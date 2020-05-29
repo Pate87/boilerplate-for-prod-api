@@ -1,7 +1,5 @@
 # Webbpack Express Example App
 
-example of a basic but functional app built on Express and Webpack.
-
 ## Get Up and Running
 
 Fork this repo, then clone your forked repo down to your computer:
