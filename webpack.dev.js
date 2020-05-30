@@ -7,12 +7,16 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 module.exports = {
     mode: 'development',
     entry: './src/client/index.js',
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    },
     module: {
         rules: [
             {
-            test: '/\.js$/',
-            exclude: /node_modules/,
-            loader: "babel-loader",
+                test: '/\.js$/',
+                exclude: /node_modules/,
+                loader: "babel-loader",
             },
             {
                 test: /\.scss$/,
