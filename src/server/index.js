@@ -30,9 +30,9 @@ app.get('/test', function (req, res) {
 
 // // POST ROUTE
 
-// app.get('/test', function (req, res) {
-//     console.log(req.body);
-//     res.send(req.body);
+app.get('/test', function (req, res) {
+    console.log(req.body);
+    res.send(req.body);
 //     res.send(mockAPIResponse)
 //     textapi.sentiment({
 //         'url': req.body.text
@@ -40,4 +40,4 @@ app.get('/test', function (req, res) {
 //           res.send(response)
 //           console.log(response)
 //       });
-// })
+})
